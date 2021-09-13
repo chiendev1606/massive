@@ -1,0 +1,71 @@
+.feature {
+    @extend %heading;
+    &__main {
+        @extend %pd-50;
+    }
+    &__col {
+        padding: 0 $pd-3;
+    }
+    &__left {
+        text-align: right;
+        img {
+            width: 95%;
+        }
+    }
+    &__right {
+        padding-right: $pd-4;
+    }
+    &__item {
+        margin-bottom: $mg-50;
+    }
+
+    &__number {
+        @include styleText($fs-3, $color-gray-6, $fw-0);
+        margin-bottom: 0;
+    }
+    &__title {
+        @include styleText($fs-0 + 3, $color-black-2, $fw-0);
+        letter-spacing: 1px;
+        margin-bottom: $mg-3 + 5;
+    }
+    &__text {
+        @include styleText($fs-0, $color-gray-1, $fw-0);
+    }
+    &__btn {
+        .button--dark {
+            background-color: $color-black-5;
+            font-size: $fs-0 - 1;
+            margin-right: $mg-3 + 5;
+        }
+        .button--light {
+            letter-spacing: 1px;
+        }
+    }
+    @include responsive("x-small") {
+        &__right {
+            padding: 0;
+        }
+        &__number {
+            font-size: $fs-3 - 8;
+        }
+        &__title {
+            font-size: $fs-0 - 2;
+        }
+        &__text {
+            font-size: $fs-1 - 2;
+        }
+        &__btn {
+            .button--dark {
+                width: 100%;
+                font-size: $fs-1 - 3;
+                padding: $pd-1 - 2 $pd-2;
+                margin: 0 0 $mg-4 0;
+            }
+            .button--light {
+                width: 100%;
+                font-size: $fs-1 - 3;
+                padding: $pd-1 - 2 $pd-2;
+            }
+        }
+    }
+}

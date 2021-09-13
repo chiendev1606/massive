@@ -1,0 +1,113 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background-color: transparent;
+    .headerNav {
+        height: 55%;
+        padding: 0 $pd-2 - 2;
+        transition: ease 0.5s;
+        &__logo {
+            img {
+                transition: all 0.4s;
+            }
+        }
+        .navbar {
+            &-toggler {
+                border: 0;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            &-nav {
+                .nav-link {
+                    @include styleText($fs-1, $color-black-2, $fw-1);
+                    transition: 0.5s;
+                    padding: 0 $pd-1 + 3;
+                    &:hover {
+                        color: $color-orange-1;
+                    }
+                    &.active {
+                        color: $color-orange-1;
+                    }
+                }
+            }
+        }
+
+        &--white {
+            background-color: $color-white-0;
+            height: 30%;
+            box-shadow: 0 0 3px 1px $color-gray-3;
+            .headerNav__logo {
+                img {
+                    transform: scale(0.6) translateX(-50%);
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        .headerNav {
+            .navbar {
+                &-nav {
+                    .nav-link {
+                        font-size: $fs-1 - 1;
+                        padding: 0 $fs-1 - 3;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("medium") {
+        background-color: $color-white-0;
+        height: 50px;
+        box-shadow: 0 0 3px 1px $color-gray-3;
+        .headerNav {
+            height: 100%;
+            background-color: $color-white-0;
+            padding: 0;
+            .container-fluid {
+                height: 100%;
+                padding: 0;
+            }
+            &__logo {
+                img {
+                    height: 100%;
+                }
+                height: 100%;
+                margin-left: $mg-0;
+                padding: 0;
+            }
+            .navbar {
+                &-toggler {
+                    margin-right: $mg-0;
+                }
+                &-nav {
+                    background-color: $color-white-0;
+                    padding: 0 $pd-2;
+                    .nav-link {
+                        padding: $pd-1 $pd-2;
+                        border-bottom: solid 1px $color-gray-19;
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("small") {
+        .headerNav {
+            .navbar {
+                &-nav {
+                    .nav-link {
+                        font-size: $fs-1;
+                    }
+                }
+            }
+        }
+    }
+}

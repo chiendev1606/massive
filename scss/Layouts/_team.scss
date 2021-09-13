@@ -1,0 +1,157 @@
+.team {
+    @extend %heading;
+    background-color: $color-gray-7;
+    &__col {
+        padding: 0 $pd-3;
+    }
+    &__person {
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            .team__overplay {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &__img {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    &__intro {
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        width: 70%;
+        background-color: $color-black-4;
+        padding: $pd-1 - 2 $pd-2;
+        h5 {
+            letter-spacing: 2px;
+            margin-bottom: 0;
+            @include styleText($fs-0, $color-white-0, $fw-0);
+            text-align: right;
+        }
+        p {
+            text-transform: uppercase;
+            margin: 0;
+            @include styleText($fs-0 - 1, $color-white-2, $fw-0);
+            letter-spacing: 2px;
+            text-align: right;
+        }
+    }
+    &__overplay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 20px solid $color-gray-10;
+        background-color: $color-white-1;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__words {
+        position: absolute;
+        top: 15%;
+        padding: 0 $pd-2;
+        h4 {
+            letter-spacing: 4px;
+            @include styleText($fs-0 - 1, $color-black-1, $fw-0);
+            text-align: center;
+        }
+        p {
+            @include styleText($fs-0 - 1, $color-gray-1, $fw-0);
+            text-align: center;
+            line-height: $line-height-3;
+        }
+    }
+    &__socials {
+        position: absolute;
+        bottom: 6%;
+        width: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        a {
+            color: $color-black-1;
+            transition: 0.2s;
+            &:hover {
+                color: $color-orange-1;
+            }
+        }
+    }
+    @include responsive("large") {
+        &__img {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        &__overplay {
+            width: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    @include responsive("medium") {
+        &__img {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        &__overplay {
+            width: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @include responsive("small") {
+        &__img {
+            width: 70%;
+            margin: 0 auto;
+        }
+        &__overplay {
+            width: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__words {
+            top: 10%;
+            h4 {
+                margin-bottom: $mg-3 + 5;
+            }
+        }
+    }
+    @include responsive("x-small") {
+        &__intro {
+            width: 90%;
+            padding: $pd-1 - 8;
+            h5 {
+                font-size: $fs-1 - 5;
+            }
+            p {
+                font-size: $fs-1 - 6;
+            }
+        }
+        &__words {
+            top: 10%;
+            padding: 0 $pd-0;
+            h4 {
+                font-size: $fs-1 - 3;
+                letter-spacing: 1px;
+                margin-bottom: $mg-3 + 5;
+            }
+            p {
+                font-size: $fs-1 - 4;
+                line-height: $line-height-2 - 10;
+            }
+        }
+        &__socials {
+            bottom: 2%;
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@mixin styleText($fs, $fc, $fw) {
+    font-size: $fs;
+    color: $fc;
+    font-weight: $fw;
+}
+@mixin styleBtn($pd-x, $pd-y, $fc, $fs, $bgc, $b-width, $b-color, $b-radius) {
+    padding: $pd-y $pd-x;
+    color: $fc;
+    font-size: $fs;
+    background-color: $bgc;
+    border: $b-width solid $b-color;
+    border-radius: $b-radius;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+@mixin hoverBtn($fc, $bgc, $b-color) {
+    color: $fc;
+    background-color: $bgc;
+    border-color: $b-color;
+}
+@mixin styleInput($pd-x, $pd-y, $fs, $fc, $bgc, $border-c, $border-w) {
+    &::placeholder {
+        font-size: $fs;
+        color: $fc;
+    }
+    &.form-control {
+        padding: $pd-y $pd-x;
+        background-color: $bgc;
+        color: $fc;
+        font-size: $fs;
+        border-color: $border-c;
+        border-width: $border-w;
+        border-style: solid;
+    }
+}
+@mixin focusInput($border-c) {
+    &.form-control:focus {
+        box-shadow: none;
+        border-color: $border-c;
+        outline: none;
+    }
+}
+
+@mixin responsive($screen) {
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+}

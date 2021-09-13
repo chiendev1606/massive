@@ -1,0 +1,19 @@
+.clients {
+    @extend %heading;
+    &__main {
+        @extend %pd-50;
+    }
+    &__logo {
+        margin: $mg-3 + 5;
+        img {
+            width: 100%;
+        }
+    }
+    .owl-carousel {
+        &.owl-theme {
+            .owl-dots {
+                opacity: 0.2;
+            }
+        }
+    }
+}

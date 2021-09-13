@@ -1,0 +1,71 @@
+.purchase {
+    background-color: $color-black-5;
+    &__content {
+        padding: $pd-50 + 10 $pd-50;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__question {
+        color: $color-white-0;
+        p {
+            margin-bottom: 0;
+        }
+        h3 {
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            span {
+                color: $color-orange-1;
+            }
+        }
+    }
+    &__btn {
+        .button--dark {
+            height: 85%;
+        }
+    }
+    @include responsive("large") {
+        &__question {
+            width: 70%;
+        }
+        &__btn {
+            transform: translateY(34%);
+            height: 50%;
+        }
+    }
+    @include responsive("medium") {
+        &__question {
+            width: 90%;
+            h3 {
+                font-size: $fs-0 + 3;
+            }
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__btn {
+            .button--dark {
+                font-size: $fs-1 - 1;
+            }
+        }
+    }
+    @include responsive("x-small") {
+        &__content {
+            padding: $pd-2;
+        }
+        &__question {
+            p {
+                font-size: $fs-1 - 3;
+            }
+            h3 {
+                font-size: $fs-1;
+            }
+        }
+        &__btn {
+            .button--dark {
+                padding: $pd-1 - 2 $pd-2;
+                font-size: $fs-1 - 3;
+                margin-bottom: $mg-4;
+            }
+        }
+    }
+}

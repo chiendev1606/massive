@@ -1,0 +1,57 @@
+.services {
+    @extend %heading;
+    &__main {
+        @extend %pd-50;
+    }
+    &__col {
+        border: 1px solid $color-gray-20;
+        margin: 0 0 -1px -1px;
+        transition: 0.3s;
+        &:hover {
+            border: 1px solid transparent;
+            background: $color-black-5;
+            .services__icon {
+                color: $color-orange-1;
+            }
+            .services__title {
+                color: $color-white-0;
+            }
+        }
+    }
+
+    &__content {
+        padding: $pd-50;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__icon {
+        @include styleText($fs-3, $color-black-1, $fw-0);
+        transition: 0.3s;
+    }
+    &__title {
+        @include styleText($fs-0 + 3, $color-black-1, $fw-0);
+        letter-spacing: 1px;
+        margin: $mg-0 0 $mg-1 - 5;
+        transition: 0.3s;
+    }
+    &__desc {
+        color: $color-gray-1;
+    }
+    @include responsive("x-small") {
+        &__content {
+            padding: $pd-2;
+        }
+        &__icon {
+            font-size: $fs-2 + 3;
+        }
+        &__title {
+            margin: $mg-3 0;
+            font-size: $fs-0;
+        }
+        &__desc {
+            font-size: $fs-1 - 2;
+        }
+    }
+}

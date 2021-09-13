@@ -1,0 +1,62 @@
+.footer {
+    padding: $pd-100 0;
+    background-color: $color-gray-2;
+    &__main {
+        text-align: center;
+    }
+    &__subtitle {
+        margin: $mg-3 0;
+        @include styleText($fs-1 - 1, $color-black-5, $fw-0);
+        letter-spacing: 2px;
+    }
+    &__socials {
+        margin: $mg-80 0;
+        display: flex;
+        justify-content: center;
+        a {
+            margin-right: $mg-3;
+            &:last-child {
+                margin-right: 0;
+            }
+            i {
+                @include styleText($fs-0, $color-black-5, $fw-0);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px $color-black-5 solid;
+                display: inline-block;
+                text-align: center;
+                line-height: 40px;
+                transition: 0.4s;
+            }
+            &:hover {
+                i {
+                    color: $color-white-0;
+                    background-color: $color-black-5;
+                }
+            }
+        }
+    }
+    &__copyRight {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $color-black-9;
+        p:first-child {
+            font-size: $fs-0 - 1;
+            margin-bottom: 0;
+        }
+        P:last-child {
+            font-size: $fs-1 - 1;
+            margin-bottom: 0;
+        }
+    }
+    @include responsive("x-small") {
+        padding: $pd-50 0;
+        &__socials {
+            margin: $mg-5 0;
+            a:not(a:last-child) {
+                margin-right: $mg-4 - 2;
+            }
+        }
+    }
+}

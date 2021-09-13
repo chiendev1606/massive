@@ -1,0 +1,81 @@
+.result {
+    background: url("../img/7.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: $pd-100 0;
+    &__content {
+        padding: $pd-100 $pd-50;
+    }
+    &__col {
+        color: $color-white-0;
+    }
+    &__item {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        position: relative;
+        &::after {
+            position: absolute;
+            left: 26%;
+            top: 0px;
+            content: "";
+            height: 80px;
+            width: 1px;
+            background-color: $color-white-3;
+            display: inline-block;
+            transform: rotate(30deg);
+        }
+    }
+    &__icon {
+        padding: $pd-1 - 2 0;
+        i {
+            font-size: $fs-3;
+        }
+    }
+    &__desc {
+        width: 60%;
+    }
+    &__number {
+        font-size: $fs-3;
+        margin-bottom: 0;
+    }
+    &__title {
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+    @include responsive("large") {
+        &__item {
+            justify-content: flex-start;
+            &::after {
+                left: 15%;
+            }
+        }
+        &__icon {
+            width: 20%;
+        }
+    }
+    @include responsive("medium") {
+        padding: $pd-50 0;
+    }
+    @include responsive("x-small") {
+        &__content {
+            padding: $pd-50 $pd-2 + 5;
+        }
+        &__icon {
+            i {
+                font-size: $fs-2;
+            }
+        }
+        &__number {
+            font-size: $fs-2;
+        }
+        &__title {
+            font-size: $fs-1;
+        }
+        &__item {
+            &::after {
+                left: 10%;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.portfolio {
+    @extend %heading;
+    padding: $pd-100 $pd-3 $pd-1;
+    &__tabs {
+        .nav-tabs {
+            justify-content: center;
+            border: none;
+        }
+        .nav-link {
+            text-transform: uppercase;
+            border: none;
+            @include styleText($fs-0 - 1, $color-gray-11, $fw-0);
+            letter-spacing: 3px;
+            margin: 0 $mg-3;
+        }
+    }
+    &__row {
+        margin-top: $mg-50;
+    }
+    &__col {
+        padding: $pd-1 - 2;
+    }
+    &__img {
+        position: relative;
+        &:hover {
+            .portfolio__overplay {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    &__overplay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: $color-white-1;
+        border: 20px solid $color-black-8;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.8s;
+    }
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__btn {
+        a {
+            @include styleText($fs-3 - 1, $color-black-5, $fw-0);
+        }
+    }
+    &__desc {
+        h4 {
+            margin-bottom: $mg-4 - 6;
+            a {
+                @include styleText($fs-0 - 1, $color-black-5, $fw-0);
+                letter-spacing: 4px;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            a {
+                @include styleText($fs-0 - 2, $color-gray-12, $fw-0);
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
+        a:hover {
+            color: $color-orange-1;
+        }
+    }
+    @include responsive("large") {
+        &__tabs {
+            .nav-link {
+                margin: 0;
+            }
+        }
+        &__row {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-snap-stop: always;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &__col {
+            scroll-snap-align: center;
+        }
+    }
+    @include responsive("medium") {
+        &__tabs {
+            .nav-link {
+                margin: 0;
+                padding: 0 $pd-1 - 2;
+            }
+        }
+    }
+    @include responsive("x-small") {
+        &__tabs {
+            .nav-link {
+                font-size: $fs-1 - 3;
+                margin: 0;
+                padding: 0 $pd-1 - 7;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

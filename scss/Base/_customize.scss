@@ -1,0 +1,11 @@
+.owl-carousel {
+    &.owl-theme {
+        .owl-dots {
+            span {
+                width: 12px;
+                height: 12px;
+                margin: $mg-4 - 5 $mg-4 - 3;
+            }
+        }
+    }
+}

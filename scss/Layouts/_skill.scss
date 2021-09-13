@@ -1,0 +1,122 @@
+.skill {
+    position: relative;
+    padding: $pd-100 0;
+    background: url("../img/4.jpg") 50% 50% / cover;
+    background-attachment: fixed;
+    &__overplay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background-color: $color-black-3;
+        z-index: 1;
+    }
+    &__content {
+        @extend %pd-50;
+        position: relative;
+        z-index: 2;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            @include styleText($fs-2, $color-white-0, $fw-0);
+            letter-spacing: 6px;
+        }
+    }
+    &__main {
+        padding-left: $pd-50;
+        padding-right: $pd-50 + 30;
+    }
+    &__intro {
+        @include styleText($fs-0 + 3, $color-white-0, $fw-0);
+        letter-spacing: 2px;
+    }
+    &__desc {
+        @include styleText($fs-0, $color-white-0, $fw-0);
+        line-height: $line-height-3;
+        margin-bottom: $mg-80;
+    }
+
+    &__progress {
+        margin: $mg-4 0 $mg-50;
+        &.progress {
+            border-radius: 0;
+            background-color: $color-gray-8;
+            overflow: visible;
+            height: 20px;
+        }
+        .progress-bar {
+            height: 20px;
+            width: 0;
+            padding-left: $pd-1 - 2;
+            text-align: left;
+            position: relative;
+            overflow: visible;
+            @include styleText($fs-1 - 2, $color-black-5, $fw-0);
+            background-color: $color-white-0;
+            span {
+                position: absolute;
+                top: -28px;
+                right: -5px;
+                min-width: 25px;
+                height: 20px;
+                border-radius: 30px;
+                line-height: $line-height-2 - 5;
+                text-align: center;
+                padding: 0 $pd-1 - 4;
+                background-color: $color-gray-9;
+                display: inline-block;
+                color: $color-black-5;
+                &::before {
+                    content: "";
+                    height: 5px;
+                    width: 5px;
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    background-color: $color-gray-9;
+                    position: absolute;
+                    bottom: -2px;
+                    right: 41%;
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        &__title {
+            padding: $pd-50 + 20 0;
+        }
+        &__overplay {
+            display: none;
+        }
+    }
+    @include responsive("medium") {
+        padding: $pd-50 0;
+        &__title {
+            padding: $pd-50 0;
+        }
+    }
+    @include responsive("x-small") {
+        padding: $pd-3 0;
+        &__title {
+            padding: $pd-3 0;
+            h3 {
+                font-size: $fs-0;
+            }
+        }
+        &__main {
+            padding-left: $pd-2;
+            padding-right: $pd-2 + 10;
+        }
+        &__content {
+            h4 {
+                font-size: $fs-0 - 1;
+            }
+            p {
+                font-size: $fs-0 - 2;
+            }
+        }
+    }
+}

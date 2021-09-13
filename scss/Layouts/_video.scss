@@ -1,0 +1,27 @@
+.video {
+    @extend %heading;
+    &__main {
+        @extend %pd-50;
+    }
+    &__content {
+        text-align: center;
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+    }
+    @media screen and (max-width: 601px) {
+        &__content {
+            iframe {
+                width: 400px;
+                height: 226px;
+            }
+        }
+    }
+
+    @include responsive("x-small") {
+        &__content {
+            display: none;
+        }
+    }
+}

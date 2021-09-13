@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One page - bs slider</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- font awesome    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icon -->
+    <link rel="stylesheet" href="./css/linea-icon.css">
+    <!-- light box -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- main css -->
+    <link rel=" stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main>
+        <!-- header -->
+        <header>
+            <nav id="navbar" class="navbar navbar-expand-md navbar-light headerNav">
+                <div class="container-fluid">
+                    <a class="navbar-brand headerNav__logo" href="#"><img class="img-fluid" src="./img/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMassive">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="headerMassive">
+                        <div class="navbar-nav ms-0 ms-md-auto">
+                            <a class="nav-link active" data-active="carsouselHome" href="#">HOME</a>
+                            <a class="nav-link" data-active="about" href="#about">ABOUT</a>
+                            <a class="nav-link" data-active="team" href="#team">TEAM</a>
+                            <a class="nav-link" data-active="portfolio" href="#portfolio">PORTFOLIO</a>
+                            <a class="nav-link" data-active="services" href="#services">SERVICES</a>
+                            <a class="nav-link" data-active="feature" href="#feature">FEATURES</a>
+                            <a class="nav-link" data-active="blog" href="#blog">BLOG</a>
+                            <a class="nav-link" data-active="price" href="#price">PRICE TABLE</a>
+                            <a class="nav-link" data-active="contact" href="#contact">CONTACT</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- carousel -->
+        <section id="carsouselHome" class="carouselMassive">
+            <div id="carouselMassive" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class=" carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMassive" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMassive" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMassive" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption">
+                            <div class="animate__animated animate__fadeInDown">
+                                <p class="carouselMassive__subTitle">Hi There !</p>
+                                <h1 class="carouselMassive__Title">WE ARE MASSIVE</h1>
+                                <p class="carouselMassive__text">Integer nec nulla bibendum, venenatis elit vel, vulputate nulla. Quisque lacinia nisi erat,
+                                </p>
+                                <p class="carouselMassive__text">ut scelerisque augue pharetra et. Aliquam efficitur lacus eget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="carousel-caption">
+                            <div class="animate__animated animate__fadeInDown">
+                                <p class=" carouselMassive__subTitle"> We've Lots of !</p>
+                                <h1 class="carouselMassive__Title"> Reusable Components</h1>
+                                <p class="carouselMassive__text">Vulputate nulla. Quisque lacinia nisi erat,
+                                </p>
+                                <p class="carouselMassive__text">ut scelerisque augue pharetra et. Aliquam efficitur lacus eget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="carousel-caption">
+                            <div class="animate__animated animate__fadeInDown">
+                                <p class=" carouselMassive__subTitle text-light"> Why Choose massive ? </p>
+                                <h1 class="carouselMassive__Title carouselMassive__Title--light  "> unlimited possibilities </h1>
+                                <p class="carouselMassive__text carouselMassive__text--light ">Integer nec nulla bibendum, venenatis elit vel, vulputate nulla. Quisque lacinia nisi erat,
+                                </p>
+                                <p class="carouselMassive__text text-light">ut scelerisque augue pharetra et. Aliquam efficitur lacus eget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMassive" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMassive" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="about">
+            <div class="container-md about__main">
+                <div class="heading__title">
+                    <h3>
+                        WE LOVE TO DESIGN
+                    </h3>
+                    <p>
+                        Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0 about__col wow animate__animated animate__fadeInLeft">
+                        <div class="about__items ">
+                            <div class="about__icon">
+                                <i class="icon-tools2"></i>
+                            </div>
+                            <div class="about__content">
+                                <h4 class="about__title">MODERN DESIGN</h4>
+                                <p class="about__desc">
+                                    Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0 about__col wow animate__animated animate__fadeInUp">
+                        <div class="about__items ">
+                            <div class="about__icon">
+                                <i class="icon-mobile"></i>
+                            </div>
+                            <div class="about__content">
+                                <h4 class="about__title">BOOTSTRAP</h4>
+                                <p class="about__desc">
+                                    Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 about__col wow animate__animated animate__fadeInRight">
+                        <div class="about__items ">
+                            <div class="about__icon">
+                                <i class="icon-wine"></i>
+                            </div>
+                            <div class="about__content">
+                                <h4 class="about__title">CLEAN CODE</h4>
+                                <p class="about__desc">
+                                    Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skill -->
+        <section class="skill">
+            <div class="skill__overplay"></div>
+            <div class="skill__content container-md">
+                <div class="row">
+                    <div class="col-12 col-lg-6 skill__title">
+                        <h3 class="skill__title">SKILLS AND EXPERIENCE</h3>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="skill__main">
+                            <h4 class="skill__intro">WE ARE DAMN EXPART !</h4>
+                            <p class="skill__desc">We are a team of multi-skilled and curious digital specialists who are always up for a massive challenge forever. We are a team of multi-skilled and curious digital specialists who are always up for a massive challenge forever.</p>
+                            <div id="skillGroup" class="skill__group">
+                                <div class="progress skill__progress">
+                                    <div class="progress-bar" role="progressbar" data-progress="80">
+                                        HTML / CSS / JQUERY
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                                <div class=" progress skill__progress">
+                                    <div class="progress-bar" role="progressbar" data-progress="90">
+                                        PHOTOSHOP
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                                <div class=" progress skill__progress">
+                                    <div class="progress-bar" role="progressbar" data-progress="75">
+                                        GRAPHIC DESIGN
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- team -->
+        <section id="team" class="team">
+            <div class="team__main container-md">
+                <div class="heading__title">
+                    <h3>
+                        OUR TEAM
+                    </h3>
+                    <p>
+                        Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0 team__col wow animate__animated animate__fadeInLeft">
+                        <div class="team__person ">
+                            <div class="team__img">
+                                <img src="./img/t-1.jpg" alt="team 1">
+                                <div class="team__intro">
+                                    <h5>Martin Smith</h5>
+                                    <p>founder & ceo</p>
+                                </div>
+                            </div>
+                            <div class="team__overplay ">
+                                <div class="team__words">
+                                    <h4>I LOVE TO DESIGN</h4>
+                                    <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing.</p>
+
+                                </div>
+                                <div class="team__socials">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i> </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0 team__col wow animate__animated animate__fadeInUp">
+                        <div class="team__person">
+                            <div class="team__img">
+                                <img src="./img/t-2.jpg" alt="team 2">
+                                <div class="team__intro">
+                                    <h5>Franklin Harbet</h5>
+                                    <p>HR Manager</p>
+                                </div>
+                            </div>
+                            <div class="team__overplay ">
+                                <div class="team__words">
+                                    <h4>Hello There..</h4>
+                                    <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing.</p>
+                                </div>
+                                <div class="team__socials">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4  team__col  wow animate__animated animate__fadeInRight">
+                        <div class="team__person">
+                            <div class="team__img">
+                                <img src="./img/t-3.jpg" alt="team 3">
+                                <div class="team__intro">
+                                    <h5>Linda Anderson</h5>
+                                    <p>Marketing Manager</p>
+                                </div>
+                            </div>
+                            <div class="team__overplay">
+                                <div class="team__words">
+                                    <h4>Its awesome</h4>
+                                    <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing.</p>
+                                </div>
+                                <div class="team__socials">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </section>
+
+        <!-- portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio__main">
+                <div class="heading__title container-md">
+                    <h3>
+                        PORTFOLIO
+                    </h3>
+                    <p>
+                        Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes
+                        nemo minima rerums unsers sadips amets.
+                    </p>
+                </div>
+                <div class="portfolio__tabs">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">all</button>
+                            <button class="nav-link" id="nav-printing-tab" data-bs-toggle="tab" data-bs-target="#printing" type="button" role="tab">printing</button>
+                            <button class="nav-link" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#web" type="button" role="tab">web</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#illustration" type="button" role="tab">illustration</button>
+                            <button class="nav-link" id="nav-media-tab" data-bs-toggle="tab" data-bs-target="#media" type="button" role="tab">media</button>
+                            <button class="nav-link" id="nav-crafts-tab" data-bs-toggle="tab" data-bs-target="#crafts" type="button" role="tab">crafts</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel">
+
+                            <div class="row portfolio__row">
+                                <div class="col-md-4 col-lg-3 portfolio__col">
+                                    <div class="portfolio__img">
+                                        <img src="./img/01.jpg" class="img-fluid" alt="portfolio 01">
+                                        <div class="portfolio__overplay">
+                                            <div class="portfolio__content">
+                                                <div class="portfolio__btn">
+                                                    <a href="./img/01.jpg" data-lightbox="portfolio__img"><i class="icon-basic_magnifier"></i></a>
+                                                </div>
+                                                <div class="portfolio__desc">
+                                                    <h4> <a href="./img/01.jpg" data-lightbox="portfolio__img1">lightbox view</a></h4>
+                                                    <p><a href="#">category</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3 portfolio__col">
+                                    <div class="portfolio__img">
+                                        <img src="./img/02.jpg" class="img-fluid" alt="portfolio 02">
+                                        <div class="portfolio__overplay">
+                                            <div class="portfolio__content">
+                                                <div class="portfolio__btn">
+                                                    <a href="./img/02.jpg" data-lightbox="portfolio__img"><i class="icon-basic_magnifier"></i></a>
+                                                </div>
+                                                <div class="portfolio__desc">
+                                                    <h4> <a href="./img/02.jpg" data-lightbox="portfolio__img1">lightbox view</a></h4>
+                                                    <p><a href="#">category</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3 portfolio__col">
+                                    <div class="portfolio__img">
+                                        <img src="./img/03.jpg" class="img-fluid" alt="portfolio 01">
+                                        <div class="portfolio__overplay">
+                                            <div class="portfolio__content">
+                                                <div class="portfolio__btn">
+                                                    <a href="./img/03.jpg" data-lightbox="portfolio__img"><i class="icon-basic_magnifier"></i></a>
+                                                </div>
+                                                <div class="portfolio__desc">
+                                                    <h4> <a href="./img/03.jpg" data-lightbox="portfolio__img1">lightbox view</a></h4>
+                                                    <p><a href="#">category</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3 portfolio__col">
+                                    <div class="portfolio__img">
+                                        <img src="./img/04.jpg" class="img-fluid" alt="portfolio 04">
+                                        <div class="portfolio__overplay">
+                                            <div class="portfolio__content">
+                                                <div class="portfolio__btn">
+                                                    <a href="./img/04.jpg" data-lightbox="portfolio__img"><i class="icon-basic_magnifier"></i></a>
+                                                </div>
+                                                <div class="portfolio__desc">
+                                                    <h4> <a href="./img/04.jpg" data-lightbox="portfolio__img1">lightbox view</a></h4>
+                                                    <p><a href="#">category</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3  portfolio__col">
+                                    <div class="portfolio__img">
+                                        <img src="./img/05.jpg" class="img-fluid" alt="portfolio 04">
+                                        <div class="portfolio__overplay">
+                                            <div class="portfolio__content">
+                                                <div class="portfolio__btn">
+                                                    <a href="./img/05.jpg" data-lightbox="portfolio__img"><i class="icon-basic_magnifier"></i></a>
+                                                </div>
+                                                <div class="portfolio__desc">
+                                                    <h4> <a href="./img/05.jpg" data-lightbox="portfolio__img1">lightbox view</a></h4>
+                                                    <p><a href="#">category</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3 portfolio__col">
+                                    <div class="portfolio__img">
+                                        <img src="./img/06.jpg" class="img-fluid" alt="portfolio 05">
+                                        <div class="portfolio__overplay">
+                                            <div class="portfolio__content">
+                                                <div class="portfolio__btn">
+                                                    <a href="./img/06.jpg" data-lightbox="portfolio__img"><i class="icon-basic_magnifier"></i></a>
+                                                </div>
+                                                <div class="portfolio__desc">
+                                                    <h4> <a href="./img/06.jpg" data-lightbox="portfolio__img1">lightbox view</a></h4>
+                                                    <p><a href="#">category</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3  portfolio__col">
+                                    <div class="portfolio__img">
+                                        <img src="./img/07.jpg" class="img-fluid" alt="portfolio 06">
+                                        <div class="portfolio__overplay">
+                                            <div class="portfolio__content">
+                                                <div class="portfolio__btn">
+                                                    <a href="./img/08.jpg" data-lightbox="portfolio__img"><i class="icon-basic_magnifier"></i></a>
+                                                </div>
+                                                <div class="portfolio__desc">
+                                                    <h4> <a href="./img/08.jpg" data-lightbox="portfolio__img1">lightbox view</a></h4>
+                                                    <p><a href="#">category</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3 portfolio__col">
+                                    <div class="portfolio__img">
+                                        <img src="./img/09.jpg" class="img-fluid" alt="portfolio 01">
+                                        <div class="portfolio__overplay">
+                                            <div class="portfolio__content">
+                                                <div class="portfolio__btn">
+                                                    <a href="./img/09.jpg" data-lightbox="portfolio__img"><i class="icon-basic_magnifier"></i></a>
+                                                </div>
+                                                <div class="portfolio__desc">
+                                                    <h4> <a href="./img/09.jpg" data-lightbox="portfolio__img1">lightbox view</a></h4>
+                                                    <p><a href="#">category</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="printing" role="tabpanel">printing</div>
+                        <div class="tab-pane fade" id="web" role="tabpanel">web</div>
+                        <div class="tab-pane fade" id="illustration" role="tabpanel">illustration</div>
+                        <div class="tab-pane fade" id="illustration" role="tabpanel">media</div>
+                        <div class="tab-pane fade" id="illustration" role="tabpanel">crafts</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- purchase -->
+        <section class="purchase">
+            <div class="purchase__content container-md">
+                <div class="purchase__question">
+                    <p>ARE YOU IMPRESSED WITH OUR CREATIVE WORK?</p>
+                    <h3>START <span>BUILDING YOUR PROJECT</span> WITH MASSIVE</h3>
+                </div>
+                <div class="purchase__btn">
+                    <button class="button--dark">purchase now</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- services -->
+        <section id="services" class="services">
+            <div class="services__main container-md">
+                <div class="heading__title">
+                    <h3>
+                        MASSIVE SERVICES
+                    </h3>
+                    <p>
+                        Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes
+                        nemo minima rerums unsers sadips amets.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 services__col wow animate__animated animate__zoomIn">
+
+                        <div class="services__content">
+                            <div class="services__icon"><i class="icon-lightbulb"></i></div>
+                            <h4 class="services__title">CREATIVE DESIGN</h4>
+                            <p class="services__desc">Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4  services__col wow animate__animated animate__zoomIn ">
+                        <div class="services__content">
+                            <div class="services__icon"><i class=" icon-browser2"></i></div>
+                            <h4 class="services__title">PROFESSIONAL CODE</h4>
+                            <p class="services__desc">Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 services__col wow animate__animated animate__zoomIn">
+
+                        <div class="services__content">
+                            <div class="services__icon"><i class=" icon-laptop2"></i></div>
+                            <h4 class="services__title">EASY CUSTOMIZE</h4>
+                            <p class="services__desc">Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 services__col wow animate__animated animate__zoomIn">
+
+                        <div class="services__content">
+                            <div class="services__icon"><i class="icon-basic_gear"></i></div>
+                            <h4 class="services__title">24/7 SUPPORT</h4>
+                            <p class="services__desc">Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4  services__col wow animate__animated animate__zoomIn">
+
+                        <div class="services__content">
+                            <div class="services__icon"><i class="icon-basic_pencil_ruler"></i></div>
+                            <h4 class="services__title">BOOTSTRAP</h4>
+                            <p class="services__desc">Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4  services__col wow animate__animated animate__zoomIn">
+
+                        <div class="services__content">
+                            <div class="services__icon"><i class="icon-basic_todolist_pencil"></i></div>
+                            <h4 class="services__title">CLEAN CODE</h4>
+                            <p class="services__desc">Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- intro -->
+        <section class="intro">
+            <div class="intro__main container-lg">
+                <div class="owl-carousel owl-theme intro__carousel">
+                    <div class="intro__item">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                                <div class="intro__img intro__img--1">
+                                    <img src="./img/obj-1.png" alt="obj1">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-7 col-lg-8">
+                                <div class="intro__content">
+                                    <h4>REALLY GOOD AT WEB DESIGNING</h4>
+                                    <p>
+                                        We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing. We are a team of multi-skilled and curious digital specialists who are always up for a challenge. Multi-skilled
+                                        and curious digital specialists.
+                                    </p>
+                                    <button class="button--dark">get price</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__item">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                                <div class="intro__img intro__img--2">
+                                    <img src="./img/obj-2.png" alt="obj2">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-7 col-lg-8">
+                                <div class="intro__content">
+                                    <h4>Massive Ui Collection</h4>
+                                    <p>
+                                        We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing. We are a team of multi-skilled and curious digital specialists who are always up for a challenge. Multi-skilled
+                                        and curious digital specialists.
+                                    </p>
+                                    <button class="button--dark">get price</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__item">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                                <div class="intro__img intro__img--3">
+                                    <img src="./img/obj-3.png" alt="obj3">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-7 col-lg-8">
+                                <div class="intro__content">
+                                    <h4>Easy to customize</h4>
+                                    <p>
+                                        We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing. We are a team of multi-skilled and curious digital specialists who are always up for a challenge. Multi-skilled
+                                        and curious digital specialists.
+                                    </p>
+                                    <button class="button--dark">get price</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  feature -->
+        <section id="feature" class="feature">
+            <div class="feature__main container-md">
+                <div class="heading__title">
+                    <h3>
+                        CORE FEATURE
+                    </h3>
+                    <p>
+                        Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+                    </p>
+                </div>
+                <div class="feature__content">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-5 mg-lg-0 feature__col">
+                            <div class=" feature__left text-center wow animate__animated animate__fadeInLeft">
+                                <img src="./img/tab-1.png" alt="tab1">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 feature__col">
+                            <div class="feature__right">
+                                <div class="feature__item feature__item wow animate__animated animate__fadeInRight">
+                                    <p class="feature__number">01</p>
+                                    <h4 class="feature__title">MEGA MENU</h4>
+                                    <p class="feature__text">Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente.</p>
+                                </div>
+                                <div class="feature__item wow animate__animated animate__fadeInRight">
+                                    <p class="feature__number">02</p>
+                                    <h4 class="feature__title">UNLIMITED PORTFOLIO GRID</h4>
+                                    <p class="feature__text">Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+                                </div>
+                                <div class="feature__item wow animate__animated animate__fadeInRight">
+                                    <p class="feature__number">03</p>
+                                    <h4 class="feature__title">HUGE SHORTCODE</h4>
+                                    <p class="feature__text">Augue at maximus Pellentesque eu quam sem, ac malesuada leo sem quam pellente. vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
+                                </div>
+                                <div class="feature__btn">
+                                    <button class="button--dark">purchase now</button>
+                                    <button class="button--light">view all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- result -->
+        <section class="result">
+            <div class="result__content container-md">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0 result__col">
+                        <div class="result__item ">
+                            <div class="result__icon">
+                                <i class="icon-happy">
+                                </i>
+                            </div>
+                            <div class="result__desc ">
+                                <h2 class="result__number">36</h2>
+                                <p class="result__title">CLIENTS HANDLED</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0 result__col">
+                        <div class="result__item">
+                            <div class="result__icon">
+                                <i class="icon-flag">
+                                </i>
+                            </div>
+                            <div class="result__desc">
+                                <h2 class="result__number">29</h2>
+                                <p class="result__title">PROJECT COMPLETED</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 result__col">
+                        <div class="result__item">
+                            <div class="result__icon">
+                                <i class="icon-ribbon">
+                                </i>
+                            </div>
+                            <div class="result__desc">
+                                <h2 class="result__number">17</h2>
+                                <p class="result__title">DESIGN AWARD WON</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog -->
+        <section id="blog" class="blog">
+            <div class="blog__main container-md">
+                <div class="heading__title">
+                    <h3>
+                        Blog
+                    </h3>
+                    <p>
+                        Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+                    </p>
+                </div>
+                <div class="blog__content">
+                    <div class="row blog__row">
+                        <div class="col-md-4 col-lg-4 p-0 blog__col">
+                            <div class="blog__img"><img src="./img/p1.jpg" alt="p1"></div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 p-0 blog__col">
+                            <div class="blog__text p-0 py-md-1 px-md-3 p-lg-4">
+                                <p class="blog__date">JULY 29, 2015</p>
+                                <h4 class="blog__title"><a href="#">MAURIS QUIS TVELIT LOREM. NAM NEQUE JUSTO SUSPENDISSE</a></h4>
+                                <p class="blog__tag">
+                                    <span><a href="#">interface,</a></span>
+                                    <span><a href="#">standard,</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 p-0 blog__col">
+                            <div class="blog__img"><img src="./img/p3.jpg" alt="p3"></div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 p-0 blog__col">
+                            <div class="blog__text p-0 py-md-1 px-md-3 p-lg-4">
+                                <p class="blog__date">JULY 29, 2015</p>
+                                <h4 class="blog__title"><a href="#">MAURIS QUIS TVELIT LOREM. NAM NEQUE JUSTO SUSPENDISSE</a></h4>
+                                <p class="blog__tag">
+                                    <span><a href="#">interface,</a></span>
+                                    <span><a href="#">standard,</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4  p-0 blog__col">
+                            <div class="blog__img"><img src="./img/p2.jpg" alt="p2"></div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 p-0 blog__col">
+                            <div class="blog__text p-0 py-md-1 px-md-3 p-lg-4">
+                                <p class="blog__date">JULY 29, 2015</p>
+                                <h4 class="blog__title"><a href="#">MAURIS QUIS TVELIT LOREM. NAM NEQUE JUSTO SUSPENDISSE</a></h4>
+                                <p class="blog__tag">
+                                    <span><a href="#">interface,</a></span>
+                                    <span><a href="#">standard,</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__link"> <a href="#"> VIEW ALL BLOGS <i class="icon-arrows_slim_right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feedback -->
+        <section class="feedback">
+            <div class="feedback__main container-md">
+                <div class="owl-carousel owl-theme feedback__carousel">
+                    <div class="feedback__item">
+                        <div class="feedback__top wow animate__animated animate__zoomIn">
+                            <img src="./img/event_avatar1.jpg" alt="avatar1">
+                        </div>
+                        <div class="feedback__bottom">
+                            <p class="feedback__content">
+                                Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc, interdum commodo justoporttitor vitae. Quisque fermentum purus.
+                            </p>
+                            <div class="feedback__info">
+                                <p> - Kevin Paige -</p>
+                                <p>ABC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__top wow animate__animated animate__zoomIn">
+                            <img src="./img/event_avatar3.jpg" alt="avatar3">
+                        </div>
+                        <div class="feedback__bottom">
+                            <p class="feedback__content">
+                                Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nulla maximus dolor in quam euismod ac viverra libero aliquet.
+                            </p>
+                            <div class="feedback__info">
+                                <p>
+                                    - John Doe -
+                                </p>
+                                <p>head of marketing, TB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__top wow animate__animated animate__zoomIn">
+                            <img src="./img/event_avatar2.jpg" alt="avatar2">
+                        </div>
+                        <div class="feedback__bottom">
+                            <p class="feedback__content">
+                                Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. Nulla maximus dolor in quam euismod ac viverra libero aliquet.
+                            </p>
+                            <div class="feedback__info">
+                                <p>
+                                    - Linda Smith -
+                                </p>
+                                <p>CEO, TB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- video -->
+        <section class="video">
+            <div class="video__main container-md">
+                <div class="heading__title">
+                    <h3>
+                        WATCH VIDEO DEMO
+                    </h3>
+                    <p>
+                        Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+                    </p>
+                </div>
+                <div class="video__content wow animate__animated animate__zoomIn">
+                    <iframe src="https://www.youtube.com/embed/eLqTZ07ja7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- news -->
+        <section class="news">
+            <div class="news__main container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-6 px-0">
+                        <div class="news__item news__item--left">
+                            <div class="news__content">
+                                <h3 class="news__title"> <span>NEWS</span> SOME SERVICES THAT WE PROVIDE OCCATIONALY</h3>
+                                <p class="news__text">Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 px-0">
+                        <div class="news__item news__item--right">
+                            <div class="news__content">
+                                <h3 class="news__title"> <span>NEWS</span> EDITORS NOW USE AS THEIR DEFAULT MODEL</h3>
+                                <p class="news__text">Fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- price -->
+        <section id="price" class="price">
+            <div class="price__main container-md">
+                <div class="heading__title">
+                    <h3>
+                        price
+                    </h3>
+                    <p>
+                        Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+                    </p>
+                </div>
+                <div class="price__content">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-lg-0 mb-5 price__col wow animate__animated animate__fadeInLeft">
+                            <div class="price__item">
+                                <h1 class="price__title">starter</h1>
+                                <div class="price__value">
+                                    <p>$ 29 <span>.00</span></p>
+                                    <p>PER MONTH</p>
+                                </div>
+                                <ul class="price__support">
+                                    <li>24/7 Tech Suport</li>
+                                    <li>Lorem ipsum dolor.</li>
+                                    <li>ipsum dolor sit amet.</li>
+                                    <li>dolor sit amet.</li>
+                                </ul>
+                                <div class="price__btn">
+                                    <button class="button--light">purchase this plan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-lg-0 mb-5 price__col wow animate__animated animate__fadeInUp">
+                            <div class="price__item price__item--dark">
+                                <h1 class="price__title price__title--dark">PREMIUM</h1>
+                                <div class="price__value price__value--dark">
+                                    <p>$ 49 <span>.00</span></p>
+                                    <p>PER MONTH</p>
+                                </div>
+                                <ul class="price__support price__support--dark">
+                                    <li>24/7 Tech Suport</li>
+                                    <li>Lorem ipsum dolor.</li>
+                                    <li>ipsum dolor sit amet.</li>
+                                    <li>dolor sit amet.</li>
+                                </ul>
+                                <div class="price__btn price__btn--dark">
+                                    <button class="button--light">purchase this plan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-lg-0 mb-5 price__col wow animate__animated animate__fadeInRight">
+                            <div class="price__item">
+                                <h1 class="price__title">ENTERPRISE</h1>
+                                <div class="price__value">
+                                    <p>$ 79 <span>.00</span></p>
+                                    <p>PER MONTH</p>
+                                </div>
+                                <ul class="price__support">
+                                    <li>24/7 Tech Suport</li>
+                                    <li>Lorem ipsum dolor.</li>
+                                    <li>ipsum dolor sit amet.</li>
+                                    <li>dolor sit amet.</li>
+                                </ul>
+                                <div class="price__btn">
+                                    <button class="button--light">purchase this plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subcribe -->
+        <section class="subcribe">
+            <div class="subcribe__content container-lg">
+                <div class="heading__title">
+                    <h3>DON’T WANNA PURCHASE NOW?</h3>
+                    <p>subscribe to get in touch</p>
+                </div>
+                <div class="subcribe__form">
+                    <form class="row">
+                        <div class="col-12 col-md-9 col-lg-8 mb-3 mb-md-0 subcribe__input">
+                            <input type="text" class="form-control input--nb" placeholder="Enter your email address">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-4 text-md-start p-0">
+                            <button type="submit" class="button--dark ">subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- clients -->
+        <section class="clients">
+            <div class="clients__main container-md">
+                <div class="heading__title">
+                    <h3>OUR CLIENTS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut explicabo iusto quaerat</p>
+                </div>
+                <div class="owl-carousel owl-theme clients__carousel">
+                    <div class="clients__logo">
+                        <img src="./img/c-1.png" alt="logoc1">
+                    </div>
+                    <div class="clients__logo">
+                        <img src="./img/c-2.png" alt="logoc1">
+                    </div>
+                    <div class="clients__logo">
+                        <img src="./img/c-3.png" alt="logoc1">
+                    </div>
+                    <div class="clients__logo">
+                        <img src="./img/c-4.png" alt="logoc1">
+                    </div>
+                    <div class="clients__logo">
+                        <img src="./img/c-5.png" alt="logoc1">
+                    </div>
+                    <div class="clients__logo">
+                        <img src="./img/c-6.png" alt="logoc1">
+                    </div>
+                    <div class="clients__logo">
+                        <img src="./img/c-7.png" alt="logoc1">
+                    </div>
+                    <div class="clients__logo">
+                        <img src="./img/c-8.png" alt="logoc1">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- info -->
+        <section class="info">
+            <div class="info__main container-md">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                        <div class="info__item">
+                            <div class="info__icon wow animate__animated animate__fadeInDown">
+                                <i class="icon-map"></i>
+                            </div>
+                            <h4 class="info__title">LOCATION</h4>
+                            <p class="info__details">Upper Level, Overseas Passenger
+                                <span>Terminal, The Rocks, Sydney 2000</span></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                        <div class="info__item">
+                            <div class="info__icon wow animate__animated animate__fadeInDown">
+                                <i class="icon-mobile"></i>
+                            </div>
+                            <h4 class="info__title">CALL US </h4>
+                            <p class="info__details">Any time. We are open 24/7
+                                <span>+1 2345-67-89000</span></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="info__item">
+                            <div class="info__icon wow animate__animated animate__fadeInDown">
+                                <i class="icon-envelope"></i>
+                            </div>
+                            <h4 class="info__title">MAIL US</h4>
+                            <p class="info__details">get support via email
+                                <span>mail@massivetheme.com</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="contact">
+            <div class="contact__main container-md">
+                <div class="heading__title">
+                    <h3>DROP US A LINE</h3>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore</p>
+                </div>
+                <div class="contact__form">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 contact__col">
+                            <div class="contact__input"> <input type="text" class="form-control input--b" placeholder="Name *"></div>
+                            <div class=" contact__input "> <input type=" text" class="form-control input--b" placeholder="Email *"></div>
+                            <div class="contact__input "> <input type="text" class="form-control input--b" placeholder="Phone"></div>
+                        </div>
+                        <div class="col-12 col-lg-6 contact__col">
+                            <div class="contact__textArea">
+                                <textarea class="form-control input--b" placeholder="Comment "></textarea>
+                            </div>
+                            <div class="contact__btn ">
+                                <button class="button--dark">send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__main">
+                <div class="footer__logo wow animate__animated animate__zoomIn"><a href="#"><img src="./img/logo.png" alt="logo"></a></div>
+                <div class="footer__subtitle">THE ULTIMATE THEME WITH MASSIVE COLLECTION</div>
+                <div class="footer__socials">
+                    <div>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>&copy; MASSIVE 2014.</p>
+                    <p>BUILDING YOUR SITE WITH LOTS OF FUN</p>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- LIGHT BOX JS -->
+    <script src="./js/lightbox.min.js"></script>
+    <!-- BOOSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQUERY WAYPOINT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- COUNTUP JS -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- WOW JS -->
+    <script src="./js/wow.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

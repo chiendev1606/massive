@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+html {
+    font-size: $fs-0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $primary-font;
+    background-color: $color-white-0;
+    @include styleText($fs-0, $color-black-1, $fw-1);
+}
+::selection {
+    color: $color-white-0;
+    background: $color-orange-1;
+    text-shadow: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0;
+    margin-bottom: $mg-0;
+    font-weight: $fw-2;
+    line-height: $line-height-1;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    transition: 0.4s;
+}

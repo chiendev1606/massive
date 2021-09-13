@@ -1,0 +1,49 @@
+.info {
+    background: url("../img/15.jpg") center / cover no-repeat;
+    background-attachment: fixed;
+    &__main {
+        padding: $pd-100 + $pd-50 $pd-50;
+    }
+    &__item {
+        color: $color-white-0;
+        text-align: center;
+    }
+    &__icon {
+        animation-duration: 0.3s;
+        i {
+            font-size: $fs-3;
+        }
+        margin-bottom: $mg-0;
+    }
+    &__title {
+        font-size: $fs-0 + 3;
+        letter-spacing: 1px;
+    }
+    &__details {
+        margin-bottom: 0;
+        span {
+            display: block;
+        }
+    }
+    @include responsive("large") {
+        &__icon {
+            margin-bottom: $mg-4;
+        }
+        &__title {
+            margin-bottom: $mg-4;
+        }
+    }
+    @include responsive("x-small") {
+        &__icon {
+            i {
+                font-size: $fs-2;
+            }
+        }
+        &__title {
+            font-size: $fs-0;
+        }
+        &__details {
+            font-size: $fs-1;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.input--nb {
+    @include styleInput($pd-1, $pd-0 + 4, $fs-0, $color-gray-14, $color-white-0, transparent, 0);
+    @include focusInput($color-white-0);
+}
+.input--b {
+    @include styleInput($pd-1, $pd-0 + 4, $fs-0, $color-gray-14, $color-white-0, $color-gray-15, 1px);
+    @include focusInput($color-black-5);
+}

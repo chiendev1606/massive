@@ -1,0 +1,14 @@
+.button--dark {
+    @include styleBtn($pd-3, $pd-1 + 3, $color-white-0, $fs-0 - 1, $color-gray-5, $border-1, transparent, 4px);
+    letter-spacing: 1px;
+    &:hover {
+        @include hoverBtn($color-white-0, $color-orange-1, transparent);
+    }
+}
+
+.button--light {
+    @include styleBtn($pd-3, $pd-1 + 3, $color-black-5, $fs-0 - 1, $color-white-0, $border-1, $color-black-5, 4px);
+    &:hover {
+        @include hoverBtn($color-white-0, $color-black-5, $color-black-5);
+    }
+}

@@ -1,0 +1,133 @@
+.price {
+    @extend %heading;
+    &__main {
+        @extend %pd-50;
+    }
+    &__col {
+        padding: 0 $pd-1 + 3;
+    }
+    &__item {
+        padding: $pd-50;
+        text-align: center;
+        border: 1px $color-gray-16 solid;
+        &--dark {
+            background-color: $color-black-5;
+            border-color: transparent;
+        }
+    }
+    &__title {
+        @include styleText($fs-0 + 1, $color-black-1, $fw-0);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        &--dark {
+            color: $color-orange-1;
+        }
+    }
+    &__value {
+        padding: $pd-2 + 5 0;
+        margin-bottom: $mg-5;
+        border-top: 1px solid $color-gray-15;
+        border-bottom: 1px solid $color-gray-15;
+        p {
+            @include styleText($fs-3 + 6, $color-black-1, $fw-0);
+        }
+        p:first-child {
+            margin-bottom: 0;
+            span {
+                font-size: $fs-1 + 1;
+                margin-left: -10px;
+            }
+        }
+        p:last-child {
+            font-size: $fs-1 - 1;
+            margin-bottom: 0;
+        }
+        &--dark {
+            border-color: $color-gray-5;
+            p {
+                color: $color-white-0;
+            }
+        }
+    }
+    &__support {
+        padding: 0;
+        list-style: none;
+        margin-bottom: $mg-5;
+        li {
+            width: 100%;
+            margin-bottom: $mg-3;
+            color: $color-black-5;
+        }
+        &--dark {
+            li {
+                color: $color-gray-17;
+            }
+        }
+    }
+    &__btn {
+        .button--light {
+            width: 98%;
+            border-radius: 0;
+            border-color: $color-gray-16;
+            font-size: $fs-0;
+        }
+        &--dark {
+            .button--light {
+                border-color: transparent;
+                &:hover {
+                    background-color: $color-orange-1;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        &__item {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    @include responsive("medium") {
+        &__item {
+            width: 65%;
+            margin: 0 auto;
+        }
+    }
+    @include responsive("small") {
+        &__item {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+    @include responsive("x-small") {
+        &__item {
+            padding: $pd-2;
+            width: 100%;
+        }
+        &__title {
+            font-size: $fs-0 - 1;
+            margin-bottom: $mg-3 + 5;
+        }
+        &__value {
+            padding: $pd-1 + 3 0;
+            margin-bottom: $mg-0;
+
+            p {
+                font-size: $fs-2 + 6;
+            }
+        }
+        &__support {
+            margin-bottom: $mg-0;
+            li {
+                font-size: $fs-1;
+                margin-bottom: $mg-4;
+            }
+        }
+        &__btn {
+            .button--light {
+                font-size: $fs-0 - 1;
+                padding: $pd-1 - 2 $pd-2;
+            }
+        }
+    }
+}
